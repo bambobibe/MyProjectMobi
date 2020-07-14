@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@keyframes rotate360 {
+	50% { transform: rotate(180deg); }
+}
+.rotate360 {
+	animation-name: rotate360;
+	animation-duration: 2s; /* Thời gian xoay */
+}
+@-webkit-keyframes rotate360 {
+	100% { -webkit-transform: rotate(360deg); }
+}
+ 
+@-moz-keyframes rotate360 {
+	100% { -moz-transform: rotate(360deg); }
+}
+ 
+@-ms-keyframes rotate360 {
+	100% { -ms-transform: rotate(360deg); }
+}
+ 
+@-o-keyframes rotate360 {
+	100% { -o-transform: rotate(360deg); }
+}
+ 
+@keyframes rotate360 {
+	100% { transform: rotate(360deg); }
+}
+ @keyframes mymove {
+  50% {text-shadow: 10px 20px 30px red;}
+}
+.rotate360 {
+	-webkit-animation-name: rotate360;
+	-moz-animation-name: rotate360;
+	-ms-animation-name: rotate360;
+	-o-animation-name: rotate360;
+	animation-name: rotate360;
+ 
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.row{
+	padding-top: 10px;
+}
+.menu {
+	font-size: 16px;
+	font-weight: bolder;
+	border-top: 1px solid;
+	border-bottom: 3px solid;
+}
+.menu ul li {
+	border-right: 1px solid
+}
+.menu ul li :hover{
+	background-color: red;
+	color: yellow;
+}
+.wraper{
+	background-color: #caf373;
+}
+.header{
+	background-color: white;
+}
+.main .container{
+	align-items: center;
+	display: flex; 
+	justify-content: center;
+}
+.Company .navbar .nav-link img{
+	height: 60px;
+	width: 105px;
+}
+.Company .navbar .nav-link :hover{
+	background-color: tomato;
+}
+.Company .navbar{
+	background-color: sandybrown;
+}
+.main .black {
+	height: 90px;
+	width: 1000px;
+}
+.main img {
+	width: 250px;
+	height: 250px;
+	padding: 15px;
+
+}
+.table tr td {
+	overflow: hidden;
+}
+.main .table :hover>img{
+	transform: scale(1.1);
+	transition: all ease 0.1s;
+}
+.company ul{
+	background-color: yellow;
+}
+.company ul li img {
+	height: 50px;
+	width: 90px;
+}
+.company ul li :hover{
+	background-color: red;
+}
+.main table {
+	border: 1px solid; 
+	text-align: center;
+}
+.main table tr{
+	border:1px solid;
+}
+.main table tr td{
+	border-left: 1px solid;
+	border-right: 1px solid; 
+	text-align: center;
+}
+.main table tr td button {
+	border-radius: 5px;
+	background-color: yellow;
+	width: 60px;
+}
+.footer{
+	background-color: #ffea7b;
+}
+.table button :hover{
+	background-color: red;
+}
+.fixNav{
+	background-color: white;
+	width: 100%;
+ 	position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+ 	z-index: 100000;
+}

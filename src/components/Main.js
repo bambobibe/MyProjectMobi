@@ -6,7 +6,7 @@ class Main extends Component{
     constructor(props){
         super(props);
         this.state = {
-            isClickButton : false 
+            isClickButton : true 
         }
     }
    onClickButton = ()=>{
@@ -25,7 +25,7 @@ class Main extends Component{
                         <Category /> 
                     <button type="button" class="btn btn-large btn-block btn-primary"
                         onClick={this.onClickButton}
-                    >===</button>
+                    ><i class="fa fa-bars" aria-hidden="true"></i></button>
                     </div>
                     <div className={isClickButton ? "col-9" : ""}>
                         <img  className="black" src="./img/smallBanners/blackFriday.gif "/>

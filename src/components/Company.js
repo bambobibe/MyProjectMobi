@@ -2,23 +2,35 @@ import React , { Component } from 'react';
 import Icon from "./Icon";
 
 class Company extends Component{
-    
+    constructor(props){
+        super(props);
+        this.state = {
+            Companys : [
+                "./img/company/Apple.jpg",
+                "./img/company/HTC.jpg",
+                "./img/company/Huawei.jpg",
+                "./img/company/Itel.jpg",
+                "./img/company/Nokia.jpg",
+                "./img/company/Oppo.jpg",
+                "./img/company/Realme.png",
+                "./img/company/Samsung.jpg",
+                "./img/company/Vivo.jpg",
+                "./img/company/Xiaomi.png",
+                "./img/company/Philips.jpg",
+
+            ]
+        }
+    }
     render(){
         return (  
             <div className="Company">
                 <nav className="navbar navbar-expand-lg">
                     <ul className="navbar-nav">
-                        <Icon src="./img/company/Apple.jpg" />
-                        <Icon src="./img/company/HTC.jpg" />
-                        <Icon src="./img/company/Huawei.jpg" />
-                        <Icon src="./img/company/Itel.jpg" />
-                        <Icon src="./img/company/Nokia.jpg" />
-                        <Icon src="./img/company/Oppo.jpg" />
-                        <Icon src="./img/company/Realme.png" />
-                        <Icon src="./img/company/Samsung.jpg" />
-                        <Icon src="./img/company/Vivo.jpg" />
-                        <Icon src="./img/company/Xiaomi.png" />
-                        <Icon src="./img/company/Philips.jpg" />
+                        {
+                            this.state.Companys.map((company)=>{
+                                return <Icon src={company} />
+                            })
+                        }
                     </ul>
                 </nav>
             </div>

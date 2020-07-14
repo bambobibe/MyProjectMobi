@@ -21,6 +21,12 @@ class Category extends Component{
                     <li className="nav-item">
                         <a className="nav-link" href="#">Tin tức cập nhật</a>
                     </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Chợ tốt</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Giới thiệu sản phẩm</a>
+                    </li>
                 </ul>
             </div>
         )

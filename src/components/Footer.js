@@ -1,6 +1,25 @@
 import React , { Component } from 'react';
 
 class Footer extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            branchs : [
+                {
+                    address : 'Phố Đình Quán,Ngõ 1, Văn Tiến Dũng, Bắc Từ Liêm, Hà Nội',
+                    isOpen : true
+                },
+                {
+                    address : 'Thị Tứ, Lăng Thành, Yên Thành , Nghệ An',
+                    isOpen : true
+                },
+                {
+                    address: 'fsjffjsklfjsfkljsf',
+                    isOpen : false
+                }
+            ]
+        }
+    }
     render(){
         return (  
             <div className="footer">
@@ -12,8 +31,13 @@ class Footer extends Component{
                     <div className="col-4">
                         <h2>Các chi nhánh cửa hàng</h2>
                         <ul>
-                        <li>Phố Đình Quán,Ngõ 1, Văn Tiến Dũng, Bắc Từ Liêm, Hà Nội</li>
-                        <li>Thị Tứ, Lăng Thành, Yên Thành , Nghệ An</li>
+                            {
+                                this.state.branchs.map((branch)=>{
+                                    if(branch.isOpen){
+                                    return <li>{branch.address}</li>
+                                    }
+                                })
+                            }
                         </ul>
                     </div>
                     <div className="col-4" style={{"padding-left":"100px"}}>

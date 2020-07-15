@@ -37,7 +37,7 @@ class Product extends Component{
                     this.state.products.map((product)=>{
                         if(product.isHot){
                             return <td>
-                            <img src="./img/products/hot.gif" />
+                            <div className="imgHot"><img src="./img/products/hot.gif" /></div>
                             <img src={ product.images } />
                             <h5>Giá : {product.price}</h5>
                             <button type="button" class="btn btn-danger"

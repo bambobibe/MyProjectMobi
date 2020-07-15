@@ -98,6 +98,19 @@ body{
 .Category {
 	background-color:chocolate;
 }
+.Product{
+	position: relative;
+}
+.imgHot{
+	width: 80px;
+	height: 70px;
+	position: absolute;
+	z-index: 999;
+}
+.imgHot img{
+	width: 80px;
+	height: 70px;
+}
 .Category ul li :hover{
 	background-color: brown;
 }

@@ -1,29 +1,63 @@
 import React , { Component } from 'react';
 
 class Product extends Component{
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         soluong = 0 
-    //     }
-    // }
-    // onClick = () => {
-    //     this.setState({
-    //         soluong : this.state.soluong +1 
-    //     });
-    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            products : [
+                {
+                    images : './img/products/1.jpg',
+                    price : '10.000.000 VNĐ',
+                    isHot: true
+                },
+                {
+                    images : './img/products/2.jpg',
+                    price : '10.000.000 VNĐ',
+                    isHot: true
+                },
+                {
+                    images : './img/products/3.jpg',
+                    price : '10.000.000 VNĐ',
+                    isHot: true
+                },
+                {
+                    images : './img/products/4.jpg',
+                    price : '10.000.000 VNĐ',
+                    isHot: false
+                }
+            ]
+        }
+    }
     
     render(){
-        // var soluong = this.state.soluong;
-        // console.log(soluong);
         return (  
             <div className="Product">
-                <img src={ this.props.image }></img>
-                <h5>Giá : {this.props.price}</h5>
-                <button type="button" class="btn btn-danger"
-                onClick={ this.props.soluong}>
-                  Mua ngay</button> <b></b>
-                <button type="button" class="btn btn-danger">Chi tiết</button>
+                <tr>
+                {
+                    this.state.products.map((product)=>{
+                        if(product.isHot){
+                            return <td>
+                            <img src="./img/products/hot.gif" />
+                            <img src={ product.images } />
+                            <h5>Giá : {product.price}</h5>
+                            <button type="button" class="btn btn-danger"
+                                onClick={ this.props.soluong}>
+                                Mua ngay</button> <b></b>
+                            <button type="button" class="btn btn-danger">Chi tiết</button>
+                            </td>
+                        }
+                        else{
+                            return <td><img src={ product.images }></img>
+                            <h5>Giá : {product.price}</h5>
+                            <button type="button" class="btn btn-danger"
+                                onClick={ this.props.soluong}>
+                                Mua ngay</button> <b></b>
+                            <button type="button" class="btn btn-danger">Chi tiết</button>
+                            </td>
+                        }
+                    })
+                }
+                </tr>
             </div>
         )
     }

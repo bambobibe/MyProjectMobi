@@ -17,14 +17,18 @@ class App extends Component{
     setTimeout(function(){ document.getElementById("cart").style.transform= "scale(1.0)" }, 300);
     this.setState({
         soluong : this.state.soluong +1 
-    });
+    }); 
  }
+    goTop = ()=>{
+        document.documentElement.scrollTop = 0;
+    };
     render(){
         return (
             <div className="App">
                     <Header soluong={this.state.soluong}/>
                     <Main soluong={this.tang}/>
-                    <Footer />
+                    <Footer goTop = {this.goTop}/>
+                    
             </div>
         )
     }

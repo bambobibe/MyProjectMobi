@@ -47,6 +47,7 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	width: auto;
 }
 .row{
 	padding-top: 10px;
@@ -66,9 +67,14 @@ body{
 }
 .wraper{
 	background-color: #caf373;
+	width: 100%;
 }
 .header{
 	background-color: white;
+	width: 100%;
+}
+.fixNav{
+	width: 100%;
 }
 .main .container{
 	align-items: center;
@@ -163,4 +169,19 @@ body{
 	width: 100%;
  	position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
  	z-index: 100000;
+}
+#Top{
+	margin-top: 150px;
+	z-index: 99999999;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+#Top:hover {
+	background-color: #555;
 }

@@ -20,28 +20,38 @@ class Header extends Component{
 						<div className="col-lg-4 col-sm-4 col-md-4">
 						<ul className="nav justify-content-end" style={{"margin-top":"10px"}}>
 							<li className="navbar-item">
-							<a href="#" className="navbar-link">
-								<i className="fa fa-facebook-official" style={{"font-size":"25px"}} />
-							</a>
+								<a href="#" className="navbar-link" title="https://www.facebook.com/xuan.luong.7796">
+									<i className="fa fa-facebook-official" style={{"font-size":"25px"}} />
+								</a>
 							</li>
 							<li className="navbar-item">
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-							</p>
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+								</p>
 							</li>
 							<li className="navbar-item">
-							<a href="#" className="navbar-link">
-								<i className="fa fa-skype" style={{"font-size":"25px"}} />
-							</a>
+								<a href="#" className="navbar-link" title="Lương Nguyễn">
+									<i className="fa fa-skype" style={{"font-size":"25px"}} />
+								</a>
 							</li>
 							<li className="navbar-item">
-							<p>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-							</p>
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+								</p>
 							</li>
 							<li className="navbar-item">
-							<a href="#" className="navbar-link">
-								<i className="fa fa-phone" style={{"font-size":"25px"}}>&nbsp;0394375500</i>
+								<a href="#" className="navbar-link" title="Bambobibe@gmail.com">
+									<i className="fa fa-envelope" style={{"font-size":"25px"}} />
+								</a>
+							</li>
+							<li className="navbar-item">
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+								</p>
+							</li>
+							<li className="navbar-item">
+							<a href="#" className="navbar-link" title="0394375500">
+								<i className="fa fa-phone" style={{"font-size":"25px"}}></i>
 							</a>
 							</li>
 						</ul>
@@ -60,7 +70,7 @@ class Header extends Component{
 						<li className="nav-item">
 						<a className="nav-link" href="#"><i className="fa fa-newspaper-o" /> Tin tức</a>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" id="cart">
 						<a className="nav-link" href="#"><i className="fa fa-shopping-cart" /> Giỏ hàng {this.props.soluong} </a>			
 						</li>
 						<li className="nav-item">

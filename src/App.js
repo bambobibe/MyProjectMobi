@@ -12,6 +12,9 @@ class App extends Component{
         }
     }
  tang = () =>{
+    document.getElementById("cart").style.transform= "scale(1.1)";
+    document.getElementById("cart").style.transition= "all 0.1s";
+    setTimeout(function(){ document.getElementById("cart").style.transform= "scale(1.0)" }, 300);
     this.setState({
         soluong : this.state.soluong +1 
     });

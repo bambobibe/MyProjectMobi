@@ -42,7 +42,7 @@ class Footer extends Component{
                             </ul>
                         </div>
                         <div className="col-4" style={{"padding-left":"100px"}}>
-                            <h3 style={{"font-style":"italic"}}>Tư Vấn Khách Hàng</h3>
+                            <h3 fontStyle={{"font-style":"italic"}}>Tư Vấn Khách Hàng</h3>
                             <div className="tuvan">
                             <ul>
                                 <li><i className="fa fa-phone" /> &nbsp;0394375500</li>
@@ -52,14 +52,14 @@ class Footer extends Component{
                         </div>
                         <div className="col-1">
                             <button id="Top" onClick={this.props.goTop}>
-                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                <i className="fa fa-arrow-up" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid">
                     <div className="row" style={{"background-color":"yellow"}}>
-                        <div className="col-12" style={{"-webkit-text-align":"center","text-align":"center"}}>
+                        <div className="col-12" fontStyle={{"-webkit-text-align":"center","text-align":"center"}}>
                             <p className="justify-content-center">Copyright © Nguyễn Xuân Lương 2020</p>
                         </div>	
                     </div>

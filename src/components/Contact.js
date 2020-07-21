@@ -5,7 +5,7 @@ class Contact extends Component{
     render(){
         return (  
             <div>
-                Đây là trang Liên hệ
+                Đây là trang Liên hệ !
             </div>
         )
     }

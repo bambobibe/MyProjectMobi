@@ -1,0 +1,12 @@
+{
+    "product" : [
+        {
+            "id" : 1,
+            "name" : "Huawei",
+            "price" : 10000000,
+            "images" : "./img/products/1.jpg",
+            "status" : true,
+            "soluong" : 3	
+        } 
+    ]
+}

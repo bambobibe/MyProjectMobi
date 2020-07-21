@@ -33,6 +33,7 @@ class Product extends Component{
             <div className="Product">
                 <tr>
                 {
+                    
                     this.state.products.map((product)=>{
                         if(product.isHot){
                             return <td>

@@ -4,8 +4,8 @@ class About extends Component{
     
     render(){
         return (  
-            <div>
-                Đây là trang giới thiệu
+            <div className="about">
+               <embed src="./Nguyen-Xuan-Luong-CV.pdf" width={1000} height={1200}/>
             </div>
         )
     }

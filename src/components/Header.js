@@ -64,7 +64,7 @@ class Header extends Component{
 					{/* <div class="row"> */}
 						<ul className="nav justify-content-center">
 							<li className="nav-item">
-							<NavLink to="/" className="nav-link" activeStyle={{
+							<NavLink exact to="/" className="nav-link" activeStyle={{
 									backgroundColor : 'red',
 									color : 'yellow'
 								}}>
@@ -72,7 +72,7 @@ class Header extends Component{
 								</NavLink>
 							</li>
 							<li className="nav-item" id="cart">
-								<NavLink to="/Cart" className="nav-link" activeStyle={{
+								<NavLink exact to="/Cart" className="nav-link" activeStyle={{
 									backgroundColor : 'red',
 									color : 'yellow'
 								}}>
@@ -80,7 +80,7 @@ class Header extends Component{
 								</NavLink>			
 							</li>
 							<li className="nav-item">
-								<NavLink to="/About" className="nav-link" activeStyle={{
+								<NavLink exact to="/About" className="nav-link" activeStyle={{
 									backgroundColor : 'red',
 									color : 'yellow'
 								}}>
@@ -88,7 +88,7 @@ class Header extends Component{
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/Contact" className="nav-link" activeStyle={{
+								<NavLink exact to="/Contact" className="nav-link" activeStyle={{
 									backgroundColor : 'red',
 									color : 'yellow'
 								}}>

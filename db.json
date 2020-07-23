@@ -1,12 +1,40 @@
 {
-    "product" : [
-        {
-            "id" : 1,
-            "name" : "Huawei",
-            "price" : 10000000,
-            "images" : "./img/products/1.jpg",
-            "status" : true,
-            "soluong" : 3	
-        } 
-    ]
+  "product": [
+    {
+      "name": "Oppo",
+      "images": "./img/products/3.jpg",
+      "price": 10000000,
+      "status": true,
+      "isHot": true,
+      "soluong": 0,
+      "id": 1
+    },
+    {
+      "name": "Oppo",
+      "images": "./img/products/3.jpg",
+      "price": 10000000,
+      "status": "true",
+      "isHot": false,
+      "soluong": 1,
+      "id": 2
+    },
+    {
+      "name": "Oppo",
+      "images": "./img/products/1.jpg",
+      "price": 10000000,
+      "status": true,
+      "isHot": true,
+      "soluong": 1,
+      "id": 3
+    },
+    {
+      "name": "Oppo",
+      "images": "./img/products/3.jpg",
+      "price": 12200000,
+      "status": true,
+      "isHot": false,
+      "soluong": 0,
+      "id": 4
+    }
+  ]
 }

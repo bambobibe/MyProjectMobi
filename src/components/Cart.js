@@ -22,10 +22,34 @@ class Cart extends Component{
             console.log(Error);
         })
     };
-
     
+    onDelete = (id)=>{
+        if(window.confirm('chắc chứ !!!')){
+            axios.get(`http://localhost:3000/product/${id}`).then(res=>{
+                axios({
+                    method : 'put',
+                    url : `http://localhost:3000/product/${id}`,
+                    data : {
+                        name : res.data.name,
+                        images : res.data.images,
+                        price : res.data.price,
+                        status: res.data.status,
+                        isHot : res.data.isHot,
+                        soluong: 0
+                    }
+                }).then(ress=>{
+                    axios.get(`http://localhost:3000/product`).then(response => {
+                        this.setState({
+                            products: response.data   
+                        })
+                    })
+                }   
+                )      
+            });
+        }
+    }
     render(){
-        console.log(this.state.product);
+        console.log("log:",this.state.products)
         return (  
             <div className="Cart">
                 
@@ -43,14 +67,24 @@ class Cart extends Component{
                     <tbody>
                         {
                             this.state.products.map((product) => {
-                                return <tr>
-                                    <td> {product.name} </td>
-                                    <td> {product.price} </td>
-                                    <td> {product.status.toString()} </td>
-                                    <td> {product.soluong} </td>
-                                    <td> <button type="button" class="btn btn-warning">Xóa</button> </td>
-                                    <td> {product.price * product.soluong} </td>
-                                </tr>   
+                                if(product.soluong>0){
+                                    if(product.status)
+                                        return <tr>
+                                        <td> {product.name} </td>
+                                        <td> {product.price} </td>
+                                        <td> <button type="button" className="btn-success"></button> </td>
+                                        <td> 
+                                            {product.soluong}
+                                        </td>   
+                                        <td> <button 
+                                                type="button" 
+                                                className="btn btn-warning"
+                                                onClick = { ()=>this.onDelete(product.id)}
+                                                >
+                                                Xóa</button> </td>
+                                        <td> {product.price * product.soluong} </td>
+                                </tr> 
+                                }  
                             })
                         } 
                     </tbody>

@@ -26,7 +26,7 @@ class Cart extends Component{
     onDelete = (id)=>{
         if(window.confirm('chắc chứ !!!')){
             axios.get(`http://localhost:3000/product/${id}`).then(res=>{
-                axios({
+                axios({ 
                     method : 'put',
                     url : `http://localhost:3000/product/${id}`,
                     data : {

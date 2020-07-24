@@ -6,7 +6,7 @@
       "price": 10000000,
       "status": true,
       "isHot": true,
-      "soluong": 0,
+      "soluong": 1,
       "id": 1
     },
     {
@@ -15,7 +15,7 @@
       "price": 10000000,
       "status": "true",
       "isHot": false,
-      "soluong": 1,
+      "soluong": 0,
       "id": 2
     },
     {
@@ -24,7 +24,7 @@
       "price": 10000000,
       "status": true,
       "isHot": true,
-      "soluong": 1,
+      "soluong": 0,
       "id": 3
     },
     {
